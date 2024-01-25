@@ -21,9 +21,4 @@ ol {
   padding-left: 0;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 24px;
-}
+
