@@ -14,8 +14,6 @@ function changeColor() {
   const newColor = getRandomHexColor();
   changeBodyColorEL.style.backgroundColor = newColor;
   colorSpanEL.textContent = newColor;
-
-  console.log(changeBodyColorEL);
 }
 
 changeColorButtonEL.addEventListener("click", changeColor);
