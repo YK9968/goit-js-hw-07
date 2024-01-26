@@ -20,7 +20,7 @@ function createBoxes(amount) {
   let heightBox = 30;
   for (let value = 0; value < amount; value++) {
     const markup = `<div style="background-color:${getRandomHexColor()}; width:${widthBox}px; height:${heightBox}px;"></div> `;
-    addBoxes.insertAdjacentHTML("afterbegin", markup);
+    addBoxes.insertAdjacentHTML("beforeEnd", markup);
     widthBox += 10;
     heightBox += 10;
   }
