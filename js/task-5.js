@@ -13,7 +13,10 @@ const changeBodyColorEL = document.querySelector("body");
 function changeColor() {
   const newColor = getRandomHexColor();
   changeBodyColorEL.style.backgroundColor = newColor;
-  colorSpanEL.textContent = newColor;
+  colorSpanEL.textContent = changeBodyColorEL.style.backgroundColor;
+
+  console.log(changeBodyColorEL.style.backgroundColor);
+  console.log(colorSpanEL.textContent);
 }
 
 changeColorButtonEL.addEventListener("click", changeColor);
