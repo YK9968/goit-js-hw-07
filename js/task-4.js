@@ -2,7 +2,9 @@
 
 const formLoginEL = document.querySelector(".login-form");
 
-function checkLogPas(event) {
+formLoginEL.addEventListener("submit", onCheckLogPas);
+
+function onCheckLogPas(event) {
   event.preventDefault();
   const email = event.target.elements.email.value.trim();
   const password = event.target.elements.password.value.trim();
@@ -16,5 +18,3 @@ function checkLogPas(event) {
   console.log(data);
   formLoginEL.reset();
 }
-
-formLoginEL.addEventListener("submit", checkLogPas);

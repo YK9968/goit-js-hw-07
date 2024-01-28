@@ -10,10 +10,6 @@ const inputAdd = document.querySelector("input");
 const createButton = document.querySelector("button[data-create]");
 const destroyButton = document.querySelector("button[data-destroy]");
 
-inputAdd.addEventListener("input", (event) => {
-  event.target.value;
-});
-
 function createBoxes(amount) {
   addBoxes.innerHTML = "";
   let widthBox = 30;
@@ -27,16 +23,16 @@ function createBoxes(amount) {
   inputAdd.value = "";
 }
 
-const validateInputValue = () => {
+const onValidateInputValue = () => {
   if (inputAdd.value >= 1 && inputAdd.value <= 100) {
     createBoxes(inputAdd.value);
   }
 };
 
-createButton.addEventListener("click", validateInputValue);
+createButton.addEventListener("click", onValidateInputValue);
 
-function destroyBoxes() {
+function onDestroyBoxes() {
   addBoxes.innerHTML = "";
 }
 
-destroyButton.addEventListener("click", destroyBoxes);
+destroyButton.addEventListener("click", onDestroyBoxes);

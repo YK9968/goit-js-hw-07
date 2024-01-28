@@ -20,5 +20,188 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+/* ========================================= task 6 ================================*/
 
+#controls {
+  display: flex;
+  gap: 16px;
+}
 
+#controls button {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+}
+
+.create-box {
+  background-color: #4e75ff;
+}
+
+.create-box:hover {
+  background-color: #6c8cff;
+}
+
+.destroy-box {
+  background-color: #ff4e4e;
+}
+
+.destroy-box:hover {
+  background-color: #ff7070;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  text-align: center;
+}
+
+#controls input:hover {
+  border: 1px solid #000000;
+}
+
+#boxes {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+/* ========================================= task 5 ================================*/
+.change-color {
+  width: 148px;
+  height: 40px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+.widget p {
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+/* ========================================= task 4 ================================*/
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+*/ .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form button {
+  margin-top: 8px;
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.login-form label input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  background-color: transparent;
+}
+
+.login-form label input:hover {
+  border: 1px solid #000000;
+}
+
+/* ========================================= task 3 ================================*/
+
+#name-input {
+  width: 360px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  background-color: transparent;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+#name-input h1 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+}
+/* ========================================= task 2 ================================*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 24px;
+}
+/* ========================================= task 1 ================================*/
+#categories .item {
+  width: 360px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+}
+#categories h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 16px;
+}
+
+.categories-list-item-task1 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.categories-list-item-task1 li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
