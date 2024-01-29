@@ -10,11 +10,12 @@ function onCheckLogPas(event) {
   const password = event.target.elements.password.value.trim();
   if (email === "" || password === "") {
     alert("All form fields must be filled in");
+  } else {
+    const data = {
+      email: `${email}`,
+      password: `${password}`,
+    };
+    console.log(data);
   }
-  const data = {
-    Email: `${email}`,
-    Password: `${password}`,
-  };
-  console.log(data);
   formLoginEL.reset();
 }
